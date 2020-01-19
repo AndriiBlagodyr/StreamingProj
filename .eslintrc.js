@@ -27,20 +27,14 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-props-no-spreading': 'off',
     'multiline-ternary': ['error', 'never'],
-    'max-len': ['error', 120],
     'space-infix-ops': [2],
-    'import/prefer-default-export': [2],
-    'import/no-anonymous-default-export': [2],
-    'import/no-named-default': [2],
-    'import/no-named-as-default': [2],
+    'import/prefer-default-export': 'off',
     'import/order': [
       2,
       { groups: ['builtin', 'external'], 'newlines-between': 'always' }
     ],
-    'react/prop-types': [2],
     'react/display-name': [2, { ignoreTranspilerName: true }],
     'react/prefer-stateless-function': [2],
-    'no-debugger': 'error',
-    'no-console': 'error'
+    'no-debugger': 'error'
   }
 };

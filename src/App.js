@@ -1,22 +1,19 @@
 import React from 'react';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
 
-// eslint-disable-next-line react/display-name
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { MainPage } from './components';
+import { history } from './store';
+
+const App = () => (
+  <ConnectedRouter history={history}>
+    <Switch>
+      <Route path="/" component={MainPage} />
+    </Switch>
+  </ConnectedRouter>
+);
+
+App.displayName = 'App';
 
 export default App;
