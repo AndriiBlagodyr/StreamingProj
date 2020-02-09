@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
-import { MainPage } from './components';
+import { MainPage } from './pages';
 import { history } from './store';
 
 const App = () => (
